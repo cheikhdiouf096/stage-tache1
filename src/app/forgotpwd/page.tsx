@@ -12,7 +12,7 @@ export default function Forgotpwd() {
                 <div className="icon">
                     <Image
                         src={logo}
-                        alt='logo Red'
+                        alt="logo Red"
                     />
 
 
@@ -22,7 +22,7 @@ export default function Forgotpwd() {
     <div className="w-full max-w-sm">
     
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <div className='p-2'>
+      <div className="p-2">
          <p className="mt-2 text-lg  font-bold ">
             Mot de passe oublié
          </p>

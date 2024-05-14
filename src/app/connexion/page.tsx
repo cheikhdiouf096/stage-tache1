@@ -24,7 +24,7 @@ export default function Connexion() {
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div className="p-2">
          <p className="mt-2 text-lg  font-bold ">
-            Connectez-vous en tant qu'admin
+            Connectez-vous en tant qu admin
          </p>
      </div>
         <div className="mb-4">
@@ -57,8 +57,8 @@ export default function Connexion() {
         </Link>
         </p>
       <p className="text-center text-white text-xs">
-        Vous n'avez pas de compte ? <Link href="/inscription" className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
-            S'inscrire 
+        Vous n avez pas de compte ? <Link href="/inscription" className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+            S inscrire 
           </Link>
       </p>
     </div>
