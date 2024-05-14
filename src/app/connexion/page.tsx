@@ -12,7 +12,7 @@ export default function Connexion() {
                 <div className="icon">
                     <Image
                         src={logo}
-                        alt='logo Red'
+                        alt="logo"
                     />
 
 
@@ -22,7 +22,7 @@ export default function Connexion() {
     <div className="w-full max-w-sm">
     
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <div className='p-2'>
+      <div className="p-2">
          <p className="mt-2 text-lg  font-bold ">
             Connectez-vous en tant qu'admin
          </p>
@@ -41,7 +41,7 @@ export default function Connexion() {
           
         </div>
         <div className="mb-6">
-        <input className='m-2'  name="checkbox" value="check" id="check" type="checkbox" placeholder="" />
+        <input className="m-2"  name="checkbox" value="check" id="check" type="checkbox" placeholder="" />
         
           <p className="inline-block align-baseline font-bold text-sm  hover:text-blue-800" >Gardez-moi connecter</p>
         </div>
@@ -51,7 +51,7 @@ export default function Connexion() {
           </button>
         </div>
       </form>
-        <p className='text-center'>
+        <p className="text-center">
           <Link href="/forgotpwd" className="inline-block align-baseline font-bold text-center text-sm text-orange-500 hover:text-blue-800" >
             Mot de Passe oublié ? 
         </Link>
