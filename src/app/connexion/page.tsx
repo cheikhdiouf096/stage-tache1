@@ -10,12 +10,7 @@ export default function Connexion() {
     <div className="bg-neutral-700 h-screen flex flex-col items-center justify-center py-24 sm:py-32">
          <div className="flex items-center justify-center gap-3 py-3">
                 <div className="icon">
-                    <Image
-                        src={logo}
-                        alt="logo"
-                    />
-
-
+                    <Image src={logo}  alt="logo" />
                 </div>
                 <div className="text-white font-bold">Red Product</div>
          </div>
@@ -47,7 +42,7 @@ export default function Connexion() {
         </div>
         <div className="flex items-center justify-between">
           <button className="bg-gray-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-          Connection
+            Connection 
           </button>
         </div>
       </form>

@@ -7,7 +7,7 @@ import Navbar from '../navbar/Navbar';
 
 
 
-const Dashboard = () => {
+const Sidebare = () => {
     return (
         <div>
             <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased text-gray-800">
@@ -52,8 +52,7 @@ const Dashboard = () => {
                     </ul>
                     </div>
                 </div>
-                <div className="navbar">
-                    <Navbar/>
+                <div className="navbar ">
                 </div>
             </div>
         </div>
@@ -61,5 +60,20 @@ const Dashboard = () => {
 };
 
 
-export default Dashboard;
+export default Sidebare;
 
+
+
+
+
+
+  
+
+
+
+
+ 
+
+  
+
+  
