@@ -1,0 +1,183 @@
+:root {
+  --primaryColor:hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 83%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --addressColor: #8D4B38;
+  --priceColor: #222222;
+  --whiteColorDeam:hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardHover: rgb(225, 225, 225);
+  --cardBg: rgb(255, 255, 255);
+}
+
+.Card {
+  width: 100%;
+}
+.Card .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--textColor);
+  margin: 2rem 0;
+  z-index: 2;
+}
+.Card .secTitle .title::after {
+  position: absolute;
+  content: "";
+  background: var(--secondaryColor);
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.Card .secContent {
+  padding: 3rem;
+  justify-content: center;
+  gap: 1.5em;
+}
+.Card .secContent .rowIcon {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  row-gap: 10px;
+  border-radius: 10px;
+  background: var(--cardBg);
+  box-shadow: 0 2px 4 rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Card .secContent .rowIcon:hover {
+  background: var(--cardHover);
+  box-shadow: 1 4px 4 rgba(140, 140, 141, 0.549);
+  transition: 0.3 ease;
+}
+.Card .secContent .rowIcon .color1 {
+  background: #A88ADD;
+  color: white;
+}
+.Card .secContent .rowIcon .color2 {
+  background: #0CC2AA;
+  color: white;
+}
+.Card .secContent .rowIcon .color3 {
+  background: #FCC100;
+  color: white;
+}
+.Card .secContent .rowIcon .color4 {
+  background: #F90000;
+  color: white;
+}
+.Card .secContent .rowIcon .color5 {
+  background: #9C27B0;
+  color: white;
+}
+.Card .secContent .rowIcon .color6 {
+  background: #1565C0;
+  color: white;
+}
+.Card .secContent .rowIcon .imageDiv {
+  height: 272px;
+  width: 350px;
+  overflow: hidden;
+}
+.Card .secContent .rowIcon .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.Card .secContent .rowIcon .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.Card .secContent .rowIcon .cardInfo {
+  padding: 1rem;
+}
+.Card .secContent .rowIcon .cardInfo .destTitle {
+  color: var(--blackColor);
+  font-size: 24px;
+  font-weight: 600;
+}
+.Card .secContent .rowIcon .cardInfo .continent {
+  gap: 0.5rem;
+}
+.Card .secContent .rowIcon .cardInfo .continent .icon {
+  color: var(--textColor);
+  font-size: 18px;
+}
+.Card .secContent .rowIcon .cardInfo .continent .number {
+  font-weight: 600;
+  font-size: 20px;
+}
+.Card .secContent .rowIcon .cardInfo .continent .partie {
+  font-weight: 400;
+  font-size: 14px;
+}
+.Card .secContent .rowIcon .cardInfo .price {
+  width: 100%;
+  justify-content: space-between;
+  margin: 1em 0;
+  font-size: 14px;
+  color: var(--PriceColor);
+}
+.Card .secContent .rowIcon .cardInfo .price .grade {
+  color: var(--textColor);
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Card .secContent .rowIcon .cardInfo .price .grade small {
+  text-align: center;
+  background: var(--gradientColor);
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.Card .secContent .rowIcon .cardInfo .desc {
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.Card .secContent .rowIcon .cardInfo .btn {
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 500;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.Card .secContent .rowIcon .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 940px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=card.css.map */
