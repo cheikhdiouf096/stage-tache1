@@ -9,7 +9,7 @@ import Navbar2 from '@/pages/navbar2/Navbar2';
 export default function page() {
        return (
         <div className='tailwind'>
-            <div className="container-fluid">
+            <div className="container-fluid  justify-center">
                 <div className="row">
                     <div className="col-2 col-lg-2 col-md-3">
                         <Sidebar/>

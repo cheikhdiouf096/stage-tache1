@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faRightToBracket, faUser } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import ProfileAdmin from "@/app/assets/me.jpg"
+import ProfileAdmin from "@/app/assets/me.png"
 import Image from "next/image";
 import './navbar.scss'
 

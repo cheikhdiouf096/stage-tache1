@@ -1,3 +1,7 @@
+
+
+
+
 // :root{
 //     --primaryColor:hsl(199, 100%, 33%);
 //     --secondaryColor: hsl(187, 85%, 43%);
@@ -14,10 +18,8 @@
 //     --cardBg: rgb(255, 255, 255);
 // }
 
-
 // .Card{
 //     width: 100%;
-
 
 //     .secTitle{
 //         .title{
@@ -26,7 +28,7 @@
 //             color: var(--textColor);
 //             margin: 2rem 0;
 //             z-index: 2;
-           
+            
 //             &::after{
 //                 position: absolute;
 //                 content: '';
@@ -40,21 +42,16 @@
 //         }
 //     }
 
-
 //     .secContent{
 //         padding: 3rem;
 //         justify-content: center;
-//         align-items: center;
 //         gap: 1.5em;
 
-
 //         .rowIcon{
-//             width: 100px;
 //             height: 100%;
 //             display: flex;
 //             flex-direction: row;
 //             align-items: center;
-//             justify-content: center;
 //             row-gap: 10px;
 //             border-radius: 10px;
 //             background: var(--cardBg);
@@ -92,16 +89,12 @@
 //                 color: white;
 //             }
 
-
-           
-
+            
 
 //             .imageDiv{
-//                 height: 200px;
+//                 height: 272px;
 //                 width: 350px;
 //                 overflow: hidden;
-
-
 
 
 //                 img{
@@ -111,14 +104,12 @@
 //                     transition: 2s ease;
 //                 }
 
-
 //                 &:hover{
 //                     img{
-//                         transform: scale(1.1);
+//                         transform: scale(1.1); 
 //                     }
 //                 }
 //             }
-
 
 //             .cardInfo{
 //                 padding: 1rem;
@@ -126,31 +117,27 @@
 //                     color: var(--blackColor);
 //                     font-size: 24px;
 //                     font-weight: 600;
-                   
+                    
 //                 }
 
-
 //                 .continent{
-//                     gap: 0.5rem;
-                   
+//                     gap: 0.5rem; 
+                    
 //                     .icon{
 //                         color: var(--textColor);
 //                         font-size: 18px;
 //                     }
-
 
 //                     .number{
 //                         font-weight: 600;
 //                         font-size: 20px;
 //                     }
 
-
 //                     .partie{
 //                         font-weight: 400;
 //                         font-size: 14px;
 //                     }
 //                 }
-
 
 //                 .price{
 //                     width: 100%;
@@ -159,7 +146,6 @@
 //                     font-size: 14px;
 //                     color: var(--PriceColor);
 
-
 //                     .grade{
 //                         color: var(--textColor);
 //                         max-width: 100px;
@@ -167,7 +153,6 @@
 //                         display: flex;
 //                         align-items: center;
 //                         justify-content: center;
-
 
 //                         small{
 //                             text-align: center;
@@ -180,26 +165,21 @@
 //                     }
 
 
-
-
-                   
+                    
 //                 }
-
 
 //                 .desc{
 //                     font-size: 13.5px;
 //                     color: var(--textColor);
 //                     font-weight: 500;
 //                 }
-               
+                
 //                 .btn{
 //                     margin-top: 1rem;
 //                     color: var(--whiteColor);
 //                     font-weight: 500;
 //                     justify-content: space-between;
 //                     gap: 0.5rem;
-
-
 
 
 //                     .icon{
@@ -212,288 +192,34 @@
 //     }
 // }
 
-
 // // MEDIA QUERIES ================>
-// @media screen and (min-width: 567px) {
-//     .Card .title{
+
+// @media screen and (min-width: 500px) {
+//     .title{
 //         font-size: 1.5rem;
 //         &::after{
-//             width: 155px !important;
+//             width: 155px !important; 
 //         }
 //     }
 
-
-//     .Card .secContent{
-//         grid-template-columns: repeat(1,1fr);
-       
-//         .singleDestination{
-//             height: auto;
-//         }
-//     }
-// }
-
-
-// @media screen and (min-width: 768px) {
-//     .Card .secContent{
+//     .secContent{
 //         grid-template-columns: repeat(2,1fr);
-       
-//         .singleDestination{
-//             height: auto;
-//         }
-//     }
-// }
-// @media screen and (min-width: 1024px) {
-//     .Card .secContent{
-//         grid-template-columns: repeat(3,1fr);
-       
-//         .singleDestination{
-//             height: auto;
-//         }
-//         .rowIcon.p-2{
-//             width: 300px;
-//         }
-//     }
-// }
-// @media screen and (min-width: 1280px) {
-//     .Card .secContent{
-//         grid-template-columns: repeat(3,1fr);
-       
-//         .singleDestination{
-//             height: auto;
-//         }
-//     }
-// }
-// @media screen and (min-width: 1536px) {
-//     .Card .secContent{
-//         grid-template-columns: repeat(4,1fr);
-       
-//         .singleDestination{
-//             height: auto;
-//         }
-//     }
-// }
-
-
-
-
-:root{
-    --primaryColor:hsl(199, 100%, 33%);
-    --secondaryColor: hsl(187, 85%, 43%);
-    --gradientColor: linear-gradient(to right, hsl(187, 83%, 43%), hsl(199, 100%, 33%));
-    --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%, 16%);
-    --addressColor: #8D4B38;
-    --priceColor: #222222;
-    --whiteColorDeam:hsl(0, 0%, 93%);
-    --greyText: rgb(190, 190, 190);
-    --inputColor: rgb(239, 239, 239);
-    --bodyColor: rgb(240, 240, 246);
-    --cardHover: rgb(225, 225, 225);
-    --cardBg: rgb(255, 255, 255);
-}
-
-.Card{
-    width: 100%;
-
-    .secTitle{
-        .title{
-            position: relative;
-            width: max-content;
-            color: var(--textColor);
-            margin: 2rem 0;
-            z-index: 2;
-            
-            &::after{
-                position: absolute;
-                content: '';
-                background: var(--secondaryColor);
-                height: 5px;
-                width: 120px;
-                right: 0;
-                bottom: 5px;
-                z-index: -1;
-            }
-        }
-    }
-
-    .secContent{
-        padding: 3rem;
-        justify-content: center;
-        gap: 1.5em;
-
-        .rowIcon{
-            height: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            row-gap: 10px;
-            border-radius: 10px;
-            background: var(--cardBg);
-            box-shadow: 0 2px 4 rgba(140, 140, 141, 0.549);
-            overflow: hidden;
-            &:hover{
-                background: var(--cardHover);
-                box-shadow: 1 4px 4 rgba(140, 140, 141, 0.549);
-                transition: .3 ease;
-            }
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-            .color1{
-                background: #A88ADD;
-                color: white;
-            }
-            .color2{
-                background: #0CC2AA;
-                color: white;
-            }
-            .color3{
-                background: #FCC100;
-                color: white;
-            }
-            .color4{
-                background: #F90000;
-                color: white;
-            }
-            .color5{
-                background: #9C27B0;
-                color: white;
-            }
-            .color6{
-                background: #1565C0;
-                color: white;
-            }
-
-            
-
-            .imageDiv{
-                height: 272px;
-                width: 350px;
-                overflow: hidden;
-
-
-                img{
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                    transition: 2s ease;
-                }
-
-                &:hover{
-                    img{
-                        transform: scale(1.1); 
-                    }
-                }
-            }
-
-            .cardInfo{
-                padding: 1rem;
-                .destTitle{
-                    color: var(--blackColor);
-                    font-size: 24px;
-                    font-weight: 600;
-                    
-                }
-
-                .continent{
-                    gap: 0.5rem; 
-                    
-                    .icon{
-                        color: var(--textColor);
-                        font-size: 18px;
-                    }
-
-                    .number{
-                        font-weight: 600;
-                        font-size: 20px;
-                    }
-
-                    .partie{
-                        font-weight: 400;
-                        font-size: 14px;
-                    }
-                }
-
-                .price{
-                    width: 100%;
-                    justify-content: space-between;
-                    margin: 1em 0;
-                    font-size: 14px;
-                    color: var(--PriceColor);
-
-                    .grade{
-                        color: var(--textColor);
-                        max-width: 100px;
-                        line-height: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        small{
-                            text-align: center;
-                            background: var(--gradientColor);
-                            border-radius: 1rem;
-                            color: var(--whiteColor);
-                            padding: 1px 10px;
-                            font-size: 10px;
-                        }
-                    }
-
-
-                    
-                }
-
-                .desc{
-                    font-size: 13.5px;
-                    color: var(--textColor);
-                    font-weight: 500;
-                }
-                
-                .btn{
-                    margin-top: 1rem;
-                    color: var(--whiteColor);
-                    font-weight: 500;
-                    justify-content: space-between;
-                    gap: 0.5rem;
-
-
-                    .icon{
-                        align-self: center;
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// MEDIA QUERIES ================>
-
-@media screen and (min-width: 500px) {
-    .title{
-        font-size: 1.5rem;
-        &::after{
-            width: 155px !important; 
-        }
-    }
-
-    .secContent{
-        grid-template-columns: repeat(2,1fr);
         
-        .singleDestination{
-            height: auto;
-        }
-    }
-}
+//         .singleDestination{
+//             height: auto;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 940px) {
-    .secContent{
-        grid-template-columns: repeat(3,1fr);
+// @media screen and (min-width: 940px) {
+//     .secContent{
+//         grid-template-columns: repeat(3,1fr);
         
-        .singleDestination{
-            height: auto;
-        }
-    }
-}
+//         .singleDestination{
+//             height: auto;
+//         }
+//     }
+// }
 
 
 

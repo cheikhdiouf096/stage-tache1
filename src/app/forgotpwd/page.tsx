@@ -1,51 +1,148 @@
+"use client"
 import React from "react";
 import iconRed from "@/app/assets/icon.png";
 import Image from "next/image";
 import Link from "next/link";
+import styled from "styled-components";
 
 
-export default function ForgotPwd() {
-    return (
-        <div style={{background:"#494C4F"}} className="h-screen flex flex-col items-center justify-center py-24 sm:py-22">
-             <div className="flex items-center justify-center gap-3 py-3">
-                <div className="icon">
-                    <Image
-                        src={iconRed}
-                        alt="logo Red"
-                    />
+const StyledContainer = styled.div`
+  background-color: #494C4F;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+`;
 
-                </div>
-                <div className="text-white font-bold text-lg">Red Product</div>
+
+const StyledLogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+`;
+
+
+const StyledIcon = styled.div`
+  width: 2rem;
+  height: 2rem;
+`;
+
+
+const StyledText = styled.div`
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.125rem;
+`;
+
+
+const StyledFormContainer = styled.div`
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 1rem;
+`;
+
+
+const StyledForm = styled.form`
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem;
+`;
+
+
+const StyledInfo = styled.p`
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+`;
+
+
+const StyledTextInfo = styled.div`
+  color: #a1a2a3;
+  margin-bottom: 1rem;
+`;
+
+
+const StyledInput = styled.input`
+  width: 100%;
+  border-bottom: 1px solid grey;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  &:focus {
+    outline: none;
+    border-color: lime;
+  }
+`;
+
+
+const StyledButton = styled.button`
+  width: 100%;
+  background: #45484B;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: #000;
+  }
+`;
+
+
+const StyledBackToLoginLink = styled.div`
+  color: #ffffff;
+`;
+
+
+const ForgotPwd = () => {
+  return (
+    <>
+      <StyledContainer>
+        <StyledLogoContainer>
+          <StyledIcon>
+            <Image src={iconRed} alt="logo Red" />
+          </StyledIcon>
+          <StyledText>Red Product</StyledText>
+        </StyledLogoContainer>
+        <StyledFormContainer>
+          <StyledForm>
+            <StyledInfo>Mot de passe oublié?</StyledInfo>
+            <StyledTextInfo>
+              Entrez votre adresse e-mail ci-dessous et nous vous envoyons des
+              instructions sur la façon de modifier votre mot de passe.
+            </StyledTextInfo>
+            <div className="mb-4">
+              <label htmlFor="email" className="font-bold" style={{color: '#45484B'}}>Email</label>
+              <StyledInput id="email" type="email" />
             </div>
-            <div className="w-full max-w-sm">
-                <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <div>
-                    <p className="shadow p-3 border rounded text-center text-sm mb-4 font-bold">
-                        Mot de passe oublié?
-                    </p>
-                </div>
-                    <div className="mb-4 text-stone-500">
-                    Entrez votre adresse e-mail ci-dessous et nous vous envoyons des instructions sur la façon de modifier votre mot de passe.
-                    </div>
-                    <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                        Email
-                    </label>
-                    <input 
-                        className="appearance-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" 
-                    />
-                    </div>
-                    <div className="flex items-center justify-between">
-                    <button className="bg-zinc-700 w-96 hover:bg-neutral-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                        Envoyez
-                    </button>
-                    </div>
-                </form>
-            </div>
-            <div className="text-white">
-                Revenir à la
-                <Link href="/" className="text-yellow-400"> connexion</Link></div>
-        </div>
+            <StyledButton type="button">Envoyez</StyledButton>
+          </StyledForm>
+        </StyledFormContainer>
+        <StyledBackToLoginLink>
+          Revenir à la{" "}
+          <Link href="/" className="font-bold" style={{color: "#ffcc00"}}>connexion</Link>
+        </StyledBackToLoginLink>
+      </StyledContainer>
+    </>
+  );
+};
 
-    );
-}
+
+export default ForgotPwd;
+
+
+
