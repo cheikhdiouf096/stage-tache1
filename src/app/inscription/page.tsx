@@ -146,7 +146,7 @@ const Inscription = () => {
         </StyledLogoContainer>
         <StyledFormContainer>
           <StyledForm>
-            <StyledInfo>Connectez-vous en tant qu'admin</StyledInfo>
+            <StyledInfo>Connectez-vous en tant qu admin</StyledInfo>
             <div className="mb-4">
               <label htmlFor="text" className="font-bold" style={{color: '#45484B'}}>Nom</label>
               <StyledInput id="nom" type="nom" />

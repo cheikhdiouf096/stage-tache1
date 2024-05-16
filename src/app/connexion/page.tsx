@@ -149,7 +149,7 @@ const Connexion = () => {
         </StyledLogoContainer>
         <StyledFormContainer>
           <StyledForm>
-            <StyledInfo>Connectez-vous en tant qu'admin</StyledInfo>
+            <StyledInfo>Connectez-vous en tant qu admin</StyledInfo>
             <div className="mb-4">
               <label htmlFor="email" className="font-bold" style={{color: '#45484B'}}>Email</label>
               <StyledInput id="email" type="email" />
@@ -178,7 +178,7 @@ const Connexion = () => {
         </StyledForgotPasswordLink>
         </Link>
         <StyledSignupLink className="text-white">
-          Vous n'avez pas de compte?{" "}
+          Vous n avez pas de compte?{" "}
           <Link href="/inscription" style={{color: "#ffcc00"}}>Inscription</Link>
         </StyledSignupLink>
       </StyledContainer>

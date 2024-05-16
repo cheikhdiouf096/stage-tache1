@@ -78,7 +78,7 @@ const Form = () => {
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <div style={{ flex: 1 }}>
                 <div className="mb-4">
-                  <label htmlFor="text">Nom de l'hotel</label>
+                  <label htmlFor="text">Nom de l hotel</label>
                   <StyledInput
                     id="text"
                     type="text"
